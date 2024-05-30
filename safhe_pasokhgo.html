@@ -1,0 +1,30 @@
+<!--https://quera.org/problemset/33043-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #F00;
+        }
+    </style>
+    <title>responsive page</title>
+</head>
+<body>
+    <script>
+        function changeBack() {
+            const windowWidth = window.innerWidth;
+            if (windowWidth < 600) {
+                document.body.style.backgroundColor = "#F00";
+            } else if (windowWidth >= 600 && windowWidth <= 900) {
+                document.body.style.backgroundColor = "#FF0";
+            } else {
+                document.body.style.backgroundColor = "#0F0";
+            }
+        }
+
+        window.addEventListener("resize", changeBack);
+    </script>
+</body>
+</html>
